@@ -13,7 +13,7 @@ body {
 /* Navigation Bar */
 header {
     background-color: #fff;
-    padding: 20px;
+    padding: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -38,7 +38,7 @@ nav {
     font-weight: bold;
     font-size: 1rem;
     position: relative;
-    padding: 10px 15px;
+    padding: 0px 15px;
 }
 
 .nav-links a:hover {
@@ -46,7 +46,7 @@ nav {
 }
 
 .logo {
-    height: 80px;
+    height: 120px;
 }
 
 /* Hero Section */
