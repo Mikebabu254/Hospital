@@ -46,7 +46,7 @@ nav {
 }
 
 .logo {
-    height: 80px;
+    height: 100px;
 }
 
 /* Hero Section */
@@ -166,6 +166,29 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
+}
+
+.fa-brands{
+    font-size: 20px;
+    color: burlywood;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    background-color: #585454;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.fa-instagram{
+    padding-top: 15px;
+}
+
+.fa-facebook-f{
+    padding-top: 15px;
+}
+
+.fa-youtube{
+    padding-top: 15px;
 }
 
 .social-icons {
