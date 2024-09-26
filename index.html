@@ -10,7 +10,7 @@
     <header>
         <nav>
             <img src="images/United-Logo-1.png" alt="logo" class="logo">
-            <ul  class="nav-links">
+            <ul class="nav-links">
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT US</a></li>
                 <li><a href="">SERVICES</a></li>
@@ -21,6 +21,7 @@
             </ul>
         </nav>
     </header>
+
     <section class="hero" style="background-image: url(images/doctor.jpeg);">
         <div class="hero-content">
             <h1>Welcome to United Care Homes</h1>
@@ -29,21 +30,43 @@
         </div>
     </section>
 
-    <section class="image-slider"></section>
-        <div class="slider">
-            <div class="slides">
-                <!-- Slide images -->
-                <div class="slide"><img src="images/slide1.jpg" alt="Slide 1"></div>
-                <div class="slide"><img src="images/slide2.jpg" alt="Slide 2"></div>
-                <div class="slide"><img src="images/slide3.jpg" alt="Slide 3"></div>
-            </div>
-            <!-- Navigation Buttons -->
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    <!-- Simplified Image Slider Section -->
+    <section class="image-slider">
+        <div class="slides-container">
+            <div class="slide"><img src="images/slider1.jpeg" alt="Slide 1"></div>
+            <div class="slide"><img src="images/slider2.jpeg" alt="Slide 2"></div>
+            <div class="slide"><img src="images/slider3.jpeg" alt="Slide 3"></div>
+        </div>
+        <!-- Navigation Buttons -->
+        <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vero voluptas, beatae porro dolore id quis aliquam numquam possimus quasi cum voluptatibus voluptates cupiditate est alias! Delectus iusto, commodi repellendus architecto amet voluptatibus, doloribus minima animi qui accusantium cumque aspernatur ut ex similique! Totam molestias nulla enim excepturi facere! Sint!
         </div>
     </section>
 
     <script src="Scripts/script.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">DOMICILIARY CARE</a></li>
+                <li><a href="#">SUPPORTED LIVING</a></li>
+                <li><a href="#">CAREER</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+            <div class="footer-bottom">
+                <p>© 2024 United Care Homes Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
