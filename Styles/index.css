@@ -150,3 +150,54 @@ nav {
 .logo {
     height: 80px;
 }
+
+
+/* Image Slider */
+.image-slider {
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
