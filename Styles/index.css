@@ -113,7 +113,11 @@ nav {
 }
 
 .myclass{
+    margin: 0px 5% 0px 5%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
 
 .slides-container {
@@ -134,7 +138,7 @@ nav {
 
 .mytext{
     width: 50%;
-    margin: 200px 50px 0px 50px;
+    margin: 50px 50px 0px 50px;
 }
 
 /* Slider Buttons */
