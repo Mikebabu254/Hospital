@@ -17,3 +17,9 @@ function moveSlide(direction) {
     const slideWidth = slides[0].clientWidth;
     slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
+
+let currentYear = new Date().getFullYear();
+myYear = document.getElementById('myYear');
+console.log(currentYear);
+myYear.innerHTML = ". "+currentYear+" .";
+
