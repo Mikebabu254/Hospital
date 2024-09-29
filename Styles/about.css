@@ -55,6 +55,36 @@ body {
 }
 
 
+
+.my_text{
+    text-align: center;
+}
+
+.My_slider{
+    display: flex;
+    flex-direction: column;
+}
+
+.my_button{
+    display: flex;
+    justify-content: center;
+}
+
+.my_button button{
+    height: 60px;
+    border-radius: 40px;
+    border: none;
+    margin: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.My_slider button:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+
+
 .The_main{
     text-align: center;
 }
