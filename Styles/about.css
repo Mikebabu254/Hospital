@@ -78,6 +78,14 @@ body {
     padding: 0 20px 0 20px;
 }
 
+.slider{
+    background-color: #007BFF;
+    height: 80vh;
+    padding: 30px;
+    overflow: hidden;
+
+}
+
 .My_slider button:hover{
     background-color: aquamarine;
     cursor: pointer;
