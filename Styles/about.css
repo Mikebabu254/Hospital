@@ -40,7 +40,7 @@ body {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
- 
+
 .btn {
     background-color: #007BFF;
     color: white;
@@ -92,42 +92,45 @@ body {
 .My_inside_slider {
     position: absolute;
     width: 100%;
-    top: 100%;
+    top: 100%; /* Initially below view */
     opacity: 0;
     display: flex;
     justify-content: center;
-    transition: top 0.5s ease, opacity 0.5s ease; /* Smooth slide */
+    transition: top 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    z-index: 0; /* Keep inactive slides below */
 }
 
 .My_inside_slider.active {
-    top: 0;
+    top: 0; /* Move active slide into view */
     opacity: 1;
+    z-index: 1; /* Ensure active slide is on top */
 }
 
-.My_inside_slider.inactive {
-    top: -100%;
+.My_inside_slider.previous {
+    top: -100%; /* Move previous slide out of view */
     opacity: 0;
+    z-index: 0;
 }
 
-.My_inside_slider_txt{
+.My_inside_slider_txt {
     width: 40vw;
     padding: 50px;
     text-align: center;
     font-size: 18px;
 }
 
-.My_inside_slider_txt button{
+.My_inside_slider_txt button {
     height: 50px;
     border: none;
     background-color: orange;
 }
 
-.My_inside_slider_pic{
+.My_inside_slider_pic {
     width: 40vw;
     height: auto;
 }
 
-.My_inside_slider_pic img{
+.My_inside_slider_pic img {
     width: 100%;
 }
 

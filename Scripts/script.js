@@ -66,19 +66,43 @@ myYear.innerHTML = ". "+currentYear+" .";
 // });
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     const buttons = document.querySelectorAll('.my_button button');
+//     const sliders = document.querySelectorAll('.My_inside_slider');
+
+//     buttons.forEach((button, index) => {
+//         button.addEventListener('click', () => {
+//             sliders.forEach(slider => {
+//                 slider.classList.remove('active');
+//                 slider.classList.add('inactive');
+//             });
+//             sliders[index].classList.remove('inactive');
+//             sliders[index].classList.add('active');
+//         });
+//     });
+// });
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll('.my_button button');
     const sliders = document.querySelectorAll('.My_inside_slider');
+    let currentIndex = 0;
+
+    function switchSlide(newIndex) {
+        if (newIndex !== currentIndex) {
+            sliders[currentIndex].classList.remove('active');
+            sliders[currentIndex].classList.add('previous');
+            sliders[newIndex].classList.remove('previous');
+            sliders[newIndex].classList.add('active');
+            currentIndex = newIndex;
+        }
+    }
 
     buttons.forEach((button, index) => {
         button.addEventListener('click', () => {
-            sliders.forEach(slider => {
-                slider.classList.remove('active');
-                slider.classList.add('inactive');
-            });
-            sliders[index].classList.remove('inactive');
-            sliders[index].classList.add('active');
+            switchSlide(index);
         });
     });
 });
+
 
