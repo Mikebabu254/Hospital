@@ -23,3 +23,79 @@ myYear = document.getElementById('myYear');
 console.log(currentYear);
 myYear.innerHTML = ". "+currentYear+" .";
 
+// // Wait for the DOM to be fully loaded
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Get all buttons
+//     const aboutButton = document.getElementById("aboutButton");
+//     const domiciliaryButton = document.getElementById("domiciliaryButton");
+//     const supportedButton = document.getElementById("supportedButton");
+
+//     // Get the slider elements
+//     const slides = document.querySelectorAll(".My_inside_slider");
+
+//     // Function to show the selected slide
+//     function showSlide(selectedSlideId) {
+//         slides.forEach(slide => {
+//             if (slide.id === selectedSlideId) {
+//                 slide.style.display = "block"; // Show the selected slide
+//             } else {
+//                 slide.style.display = "none"; // Hide other slides
+//             }
+//         });
+//     }
+
+//     // Event listeners for buttons
+//     aboutButton.addEventListener("click", function() {
+//         showSlide("about_us");
+//     });
+
+//     domiciliaryButton.addEventListener("click", function() {
+//         showSlide("Domiciliary_care");
+//     });
+
+//     supportedButton.addEventListener("click", function() {
+//         showSlide("Supported_living");
+//     });
+
+//     // Initialize the first slide as visible
+//     showSlide("about_us");
+// });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get all buttons
+    const aboutButton = document.getElementById("aboutButton");
+    const domiciliaryButton = document.getElementById("domiciliaryButton");
+    const supportedButton = document.getElementById("supportedButton");
+
+    // Get the slider elements
+    const slides = document.querySelectorAll(".My_inside_slider");
+
+    // Function to show the selected slide
+    function showSlide(selectedSlideId) {
+        slides.forEach(slide => {
+            if (slide.id === selectedSlideId) {
+                slide.classList.add("active"); // Show the selected slide with animation
+            } else {
+                slide.classList.remove("active"); // Hide other slides
+            }
+        });
+    }
+
+    // Event listeners for buttons
+    aboutButton.addEventListener("click", function() {
+        showSlide("about_us");
+    });
+
+    domiciliaryButton.addEventListener("click", function() {
+        showSlide("Domiciliary_care");
+    });
+
+    supportedButton.addEventListener("click", function() {
+        showSlide("Supported_living");
+    });
+
+    // Initialize the first slide as visible
+    showSlide("about_us");
+});

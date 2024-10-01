@@ -93,7 +93,7 @@ body {
     position: absolute;
     width: 100%;
     top: 100%; /* Initially below view */
-    opacity: 0;
+    opacity: 100%;
     display: flex;
     justify-content: center;
     transition: top 0.8s ease-in-out, opacity 0.8s ease-in-out;
@@ -101,13 +101,13 @@ body {
 }
 
 .My_inside_slider.active {
-    top: 0; /* Move active slide into view */
-    opacity: 1;
+    top: 100; /* Move active slide into view */
+    opacity: 100%;
     z-index: 1; /* Ensure active slide is on top */
 }
 
 .My_inside_slider.previous {
-    top: -100%; /* Move previous slide out of view */
+    top: 100%; /* Move previous slide out of view */
     opacity: 0;
     z-index: 0;
 }
