@@ -36,38 +36,3 @@
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
-
-
-
-
-.My_slider button:hover{
-    background-color: aquamarine;
-    cursor: pointer;
-}
-
-.My_inside_slider{
-    display: flex;
-    justify-content: center;
-}
-
-.My_inside_slider_txt{
-    width: 40vw;
-    padding: 50px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.My_inside_slider_txt button{
-    height: 50px;
-    border: none;
-    background-color: orange;
-}
-
-.My_inside_slider_pic{
-    width: 40vw;
-    height: auto;
-}
-
-.My_inside_slider_pic img{
-    width: 40vw;
-}
