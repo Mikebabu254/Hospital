@@ -18,14 +18,10 @@ function moveSlide(direction) {
     slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
 
-
-
 let currentYear = new Date().getFullYear();
 myYear = document.getElementById('myYear');
 console.log(currentYear);
 myYear.innerHTML = ". "+currentYear+" .";
-
-
 
 // // Wait for the DOM to be fully loaded
 // document.addEventListener("DOMContentLoaded", function () {
@@ -104,5 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
 
 
