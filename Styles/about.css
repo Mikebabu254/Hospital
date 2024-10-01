@@ -54,8 +54,6 @@ body {
     background-color: #0056b3;
 }
 
-
-
 .my_text{
     text-align: center;
 }
@@ -78,21 +76,37 @@ body {
     padding: 0 20px 0 20px;
 }
 
-.slider{
-    height: 80vh;
-    padding: 30px;
-    overflow: hidden;
-
-}
-
-.My_slider button:hover{
+.my_button button:hover{
     background-color: aquamarine;
     cursor: pointer;
 }
 
-.My_inside_slider{
+/* Slider and sliding content */
+.slider {
+    position: relative;
+    height: 80vh;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.My_inside_slider {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    opacity: 0;
     display: flex;
     justify-content: center;
+    transition: top 0.5s ease, opacity 0.5s ease; /* Smooth slide */
+}
+
+.My_inside_slider.active {
+    top: 0;
+    opacity: 1;
+}
+
+.My_inside_slider.inactive {
+    top: -100%;
+    opacity: 0;
 }
 
 .My_inside_slider_txt{
@@ -114,20 +128,19 @@ body {
 }
 
 .My_inside_slider_pic img{
-    width: 40vw;
+    width: 100%;
 }
 
-
-
-.The_main{
+/* Main content below the slider */
+.The_main {
     text-align: center;
 }
 
-.main_content{
-    display: flex; 
+.main_content {
+    display: flex;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +150,7 @@ body {
     height: 50vh;
 }
 
-.circle{
+.circle {
     background-color: #007BFF;
     width: 40px;
     height: 40px;
@@ -145,8 +158,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
-#center{
+#center {
     background-color: rgb(167, 186, 202);
 }
