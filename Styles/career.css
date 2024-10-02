@@ -1,3 +1,5 @@
+
+
 /* Hero Section */
 .hero {
     background-size: cover;
@@ -76,6 +78,7 @@
 .container{
     display: flex;
     justify-content: space-evenly;
+
 }
 
 .child_container{
@@ -84,6 +87,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
 }
 
 .fa-solid{
@@ -96,6 +100,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 50px;
+    
 }
 
 .container_one button{
@@ -107,5 +113,20 @@
     cursor: pointer;
 }
 
+.container_two{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.container_two_child{
+    display: flex;
+    justify-content: stretch;
+}
+
+.fa-regular{
+    font-size: 40px;
+    color: orange;
+}
 

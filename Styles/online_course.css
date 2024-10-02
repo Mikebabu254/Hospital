@@ -36,3 +36,9 @@
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
+
+
+.container{
+    text-align: center;
+    padding: 100px 20vw 100px 20vw;
+}
