@@ -23,7 +23,7 @@ function moveSlide(direction) {
 let currentYear = new Date().getFullYear();
 myYear = document.getElementById('myYear');
 console.log(currentYear);
-myYear.innerHTML = ". "+currentYear+" .";
+myYear.innerHTML = ". " + currentYear + " .";
 
 
 
@@ -36,8 +36,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // Get the slider elements
     const slides = document.querySelectorAll(".My_inside_slider");
 
-    // Function to show the selected slide
-    function showSlide(selectedSlideId) {
+    // Function to reset button colors
+    function resetButtonColors() {
+        aboutButton.style.backgroundColor = '';
+        aboutButton.style.color = 'black';
+        domiciliaryButton.style.backgroundColor = '';
+        domiciliaryButton.style.color = 'black';
+        supportedButton.style.backgroundColor = '';
+        supportedButton.style.color = 'black';
+    }
+
+    // Function to show the selected slide and change button color
+    function showSlide(selectedSlideId, clickedButton) {
         slides.forEach(slide => {
             if (slide.id === selectedSlideId) {
                 slide.classList.add("active"); // Show the selected slide with animation
@@ -45,21 +55,26 @@ document.addEventListener("DOMContentLoaded", function () {
                 slide.classList.remove("active"); // Hide other slides
             }
         });
+
+        // Reset button colors and set the clicked button to blue
+        resetButtonColors();
+        clickedButton.style.backgroundColor = 'aquamarine';
+        clickedButton.style.color = 'white'; // Set text color to white for better contrast
     }
 
     // Event listeners for buttons
-    aboutButton.addEventListener("click", function() {
-        showSlide("about_us");
+    aboutButton.addEventListener("click", function () {
+        showSlide("about_us", aboutButton);
     });
 
-    domiciliaryButton.addEventListener("click", function() {
-        showSlide("Domiciliary_care");
+    domiciliaryButton.addEventListener("click", function () {
+        showSlide("Domiciliary_care", domiciliaryButton);
     });
 
-    supportedButton.addEventListener("click", function() {
-        showSlide("Supported_living");
+    supportedButton.addEventListener("click", function () {
+        showSlide("Supported_living", supportedButton);
     });
 
-    // Initialize the first slide as visible
-    showSlide("about_us");
+    // Initialize the first slide as visible and the first button as blue
+    showSlide("about_us", aboutButton);
 });
