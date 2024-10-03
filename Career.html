@@ -45,7 +45,7 @@
             <p>Are you a compassionate and dedicated individual who enjoys helping others? United Care Homes have several exciting career opportunities available in the areas of domiciliary care, live-in care, supported living, and assisted living.<br>
             We offer competitive salaries, comprehensive benefits packages, and opportunities for professional growth and development. Join our team and make a difference in the lives of patients and their families!<br>
             Apply now to become a part of our dynamic and rewarding healthcare organization.</p>
-            <button>APPLY NOW</button>
+            <button id="applyNowBtn">APPLY NOW</button>
         </div>  
     </div>
 
@@ -110,7 +110,6 @@
     </div>
 
     <div class="container_two">
-        <button id="Apply">APPLY NOW</button>
         <h1>Join our team</h1>
         <h3>call us today</h3>
         <div class="container_two_child">
@@ -136,6 +135,33 @@
         </div>
         
     </div>
+
+    <!-- Hidden Form Section -->
+<div id="applyFormModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Apply Now</h2>
+        <form action="#">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" required><br><br>
+
+            <label for="position">Position:</label><br>
+            <select id="position" name="position">
+                <option value="domiciliary">Domiciliary Care</option>
+                <option value="live-in">Live-In Care</option>
+                <option value="supported-living">Supported Living</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
     
     <footer>
         <div class="footer-content">

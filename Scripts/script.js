@@ -78,3 +78,29 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize the first slide as visible and the first button as blue
     showSlide("about_us", aboutButton);
 });
+
+
+
+
+
+// Get the modal, button, and close elements
+const modal = document.getElementById('applyFormModal');
+const applyNowBtn = document.getElementById('applyNowBtn');
+const closeBtn = document.getElementsByClassName('close-btn')[0];
+
+// When the user clicks the Apply Now button, open the modal
+applyNowBtn.onclick = function() {
+    modal.style.display = 'flex';
+}
+
+// When the user clicks on the close button, close the modal
+closeBtn.onclick = function() {
+    modal.style.display = 'none';
+}
+
+// When the user clicks anywhere outside the modal, close it
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+}
